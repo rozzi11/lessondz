@@ -40,10 +40,10 @@
         // 4.*
         // let num = Number(prompt("Введите число:"));
         // const tenThousands = Math.floor(num / 10000);
-        // const thousands = Math.floor((num - tenThousands * 10000) / 1000);
-        // const hundreds = Math.floor((num - tenThousands * 10000 - thousands * 1000) / 100);
-        // const tens = Math.floor((num - tenThousands * 10000 - thousands * 1000 - hundreds * 100) / 10);
-        // const ones = Math.floor(num - tenThousands * 10000 - thousands * 1000 - hundreds * 100 - tens * 10);
+        // const thousands = Math.floor(num % 10000 / 1000);
+        // const hundreds = Math.floor(num % 1000 / 100);
+        // const tens = Math.floor(num % 100 / 10);
+        // const ones = Math.floor(num % 10);
         // alert(`В числе ${num} количество десяти тысяч: ${tenThousands}, тысяч: ${thousands}, сотен: ${hundreds}, десятков: ${tens}, единиц: ${ones}`);
 
     </script>
